@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:autofillHints=""
+        android:ems="10"
+        android:gravity="end"
+        android:inputType="textPersonName"
+        android:labelFor="@id/editText1"
+        android:textAlignment="textEnd" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText1"
+        android:layout_alignParentStart="true"
+        android:autofillHints=""
+        android:background="@android:drawable/editbox_background"
+        android:ems="10"
+        android:gravity="end"
+        android:inputType="textPersonName"
+        android:labelFor="@id/editText2"
+        android:textAlignment="textEnd"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText2"
+        android:layout_alignParentStart="true"
+        android:contentDescription="@string/clear"
+        android:onClick="onClick"
+        app:srcCompat="@mipmap/c" />
+
+    <ImageButton
+        android:id="@+id/backSpace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/clear"
+        android:layout_toEndOf="@+id/clear"
+        android:contentDescription="@string/backspace"
+        android:onClick="onClick"
+        app:srcCompat="@mipmap/ce" />
+
+    <ImageButton
+        android:id="@+id/square"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/backSpace"
+        android:layout_toEndOf="@+id/backSpace"
+        android:contentDescription="@string/square"
+        android:onClick="onClick"
+        app:srcCompat="@mipmap/kwadrat" />
+
+    <ImageButton
+        android:id="@+id/sqrt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/square"
+        android:layout_toEndOf="@+id/square"
+        android:contentDescription="@string/sqrt"
+        android:onClick="onClick"
+        app:srcCompat="@mipmap/sqrt" />
+
+    <ImageButton
+        android:id="@+id/num7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/clear"
+        android:layout_alignParentStart="true"
+        android:contentDescription="@string/_7"
+        android:onClick="onClick"
+        app:srcCompat="@mipmap/n7" />
+
+    <ImageButton
+        android:id="@+id/num8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/num7"
+        android:layout_toEndOf="@+id/num7"
+        android:contentDescription="@string/_8"
+        android:onClick="onClick"
+        app:srcCompat="@mipmap/n8" />
+
+    <ImageButton
+        android:id="@+id/num9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/num8"
+        android:layout_toEndOf="@+id/num8"
+        android:contentDescription="@string/_9"
+        android:onClick="onClick"
+        app:srcCompat="@mipmap/n9" />
+
+    <ImageButton
+        android:id="@+id/num4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/num7"
+        android:layout_alignParentStart="true"
+        android:contentDescription="@string/_4"
+        android:onClick="onClick"
+        app:srcCompat="@mipmap/n4" />
+
+    <ImageButton
+        android:id="@+id/num5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/num4"
+        android:layout_toEndOf="@+id/num4"
+        android:contentDescription="@string/_5"
+        android:onClick="onClick"
+        app:srcCompat="@mipmap/n5" />
+
+    <ImageButton
+        android:id="@+id/num6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/num5"
+        android:layout_toEndOf="@+id/num5"
+        android:contentDescription="@string/_6"
+        android:onClick="onClick"
+        app:srcCompat="@mipmap/n6" />
+
+    <ImageButton
+        android:id="@+id/num1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/num4"
+        android:layout_alignParentStart="true"
+        android:contentDescription="@string/_1"
+        android:onClick="onClick"
+        app:srcCompat="@mipmap/n1" />
+
+    <ImageButton
+        android:id="@+id/num2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/num1"
+        android:layout_toEndOf="@+id/num1"
+        android:contentDescription="@string/_2"
+        android:onClick="onClick"
+        app:srcCompat="@mipmap/n2" />
+
+    <ImageButton
+        android:id="@+id/num3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/num2"
+        android:layout_toEndOf="@+id/num2"
+        android:contentDescription="@string/_3"
+        android:onClick="onClick"
+        app:srcCompat="@mipmap/n3" />
+
+    <ImageButton
+        android:id="@+id/posneg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/num1"
+        android:layout_alignParentStart="true"
+        android:contentDescription="@string/posneg"
+        android:onClick="onClick"
+        android:textSize="18sp"
+        app:srcCompat="@mipmap/plusminus" />
+
+    <ImageButton
+        android:id="@+id/num0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/posneg"
+        android:layout_toEndOf="@+id/posneg"
+        android:contentDescription="@string/_0"
+        android:onClick="onClick"
+        app:srcCompat="@mipmap/n0" />
+
+    <ImageButton
+        android:id="@+id/dot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/num0"
+        android:layout_toEndOf="@+id/num0"
+        android:contentDescription="@string/dot"
+        android:onClick="onClick"
+        android:textSize="24sp"
+        app:srcCompat="@mipmap/dot" />
+
+    <ImageButton
+        android:id="@+id/plus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/num9"
+        android:layout_toEndOf="@+id/num9"
+        android:contentDescription="@string/plus"
+        android:onClick="onClick"
+        app:srcCompat="@mipmap/sum" />
+
+    <ImageButton
+        android:id="@+id/minus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/num6"
+        android:layout_toEndOf="@+id/num6"
+        android:contentDescription="@string/minus"
+        android:onClick="onClick"
+        app:srcCompat="@mipmap/minus" />
+
+    <ImageButton
+        android:id="@+id/divide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/num3"
+        android:layout_toEndOf="@+id/num3"
+        android:contentDescription="@string/divide"
+        android:onClick="onClick"
+        app:srcCompat="@mipmap/div" />
+
+    <ImageButton
+        android:id="@+id/multiply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/dot"
+        android:layout_toEndOf="@+id/dot"
+        android:contentDescription="@string/multiply"
+        android:onClick="onClick"
+        app:srcCompat="@mipmap/multi" />
+
+    <ImageButton
+        android:id="@+id/openBracket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/posneg"
+        android:layout_alignParentStart="true"
+        android:contentDescription="@string/openBracket"
+        android:onClick="onClick"
+        app:srcCompat="@mipmap/nawiasopen" />
+
+    <ImageButton
+        android:id="@+id/closeBracket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/num0"
+        android:layout_alignBottom="@+id/openBracket"
+        android:layout_toEndOf="@+id/openBracket"
+        android:contentDescription="@string/closeBracket"
+        android:onClick="onClick"
+        app:srcCompat="@mipmap/nawiasclose" />
+
+
+    <ImageButton
+        android:id="@+id/inverse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dot"
+        android:layout_alignBottom="@+id/closeBracket"
+        android:layout_toEndOf="@+id/closeBracket"
+        android:contentDescription="@string/equal"
+        android:onClick="onClick"
+        app:srcCompat="@mipmap/odwr" />
+
+    <ImageButton
+        android:id="@+id/equal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/multiply"
+        android:layout_alignBottom="@+id/inverse"
+        android:layout_toEndOf="@+id/inverse"
+        android:contentDescription="@string/equal"
+        android:onClick="onClick"
+        app:srcCompat="@mipmap/equal" />
+
+
+</RelativeLayout>
